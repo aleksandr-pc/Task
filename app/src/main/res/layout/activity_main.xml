@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.top.developer.task.MainActivity">
+
+    <TextView
+        android:id="@+id/tvSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/search_term"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvSearch"
+        android:hint="@string/hint_search"
+        android:padding="10dp"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tvColumns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSearch"
+        android:padding="10dp"
+        android:text="@string/column_hint"
+        android:textSize="15dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextSearch"
+        android:layout_toEndOf="@+id/tvSearch"
+        android:layout_toRightOf="@+id/tvColumns"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/numberOfColumns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextSearch"
+        android:layout_toRightOf="@+id/seekBar"
+        android:hint="numberOfColumns"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/search_go_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numberOfColumns"
+        android:padding="10dp"
+        android:text="@string/search_now" />
+
+
+</RelativeLayout>

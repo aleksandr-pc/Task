@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">Task</string>
+    <string name="search_term">Search term</string>
+    <string name="hint_search">Please add search words </string>
+    <string name="column_hint">Column</string>
+    <string name="search_now">Search now!</string>
+
+
+</resources>
